@@ -66,7 +66,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
 		@Override
 		public void onClick(View v) {
+<<<<<<< HEAD
 //			delete(getAdapterPosition());
+=======
+			delete(getAdapterPosition());
+>>>>>>> 21b0ae4c7d7c641000ddc9fa976179e8d4cc7222
 		}
 
 	}

@@ -3,10 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:layout_marginEnd="56dp"
     android:layout_marginRight="56dp"
     android:background="@color/secondaryTextColorLight"
     android:clickable="true"
+=======
+    android:layout_marginRight="56dp"
+    android:layout_marginEnd="56dp"
+    android:background="@color/secondaryTextColorLight"
+>>>>>>> 21b0ae4c7d7c641000ddc9fa976179e8d4cc7222
     app:theme="@style/AppTheme"
     tools:context="br.com.cast.treinamento.materialtest.NavigationDrawerFragment" >
 
@@ -14,11 +20,19 @@
         android:id="@+id/image_navigation_drawer"
         android:layout_width="0dp"
         android:layout_height="181dp"
+<<<<<<< HEAD
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+=======
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+>>>>>>> 21b0ae4c7d7c641000ddc9fa976179e8d4cc7222
         android:background="@color/primaryColorLight"
         android:contentDescription="Imagem"
         android:scaleType="centerCrop"

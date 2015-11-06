@@ -17,14 +17,20 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+<<<<<<< HEAD
 import android.widget.Toast;
+=======
+>>>>>>> 21b0ae4c7d7c641000ddc9fa976179e8d4cc7222
 
 public class NavigationDrawerFragment extends Fragment {
 
 	public static final String PREF_FILE_NAME = "testpref";
 	public static final String KEY_USER_LEARNED_DRAWER = "user_learned_drawer";
+<<<<<<< HEAD
 	private static Toast toastClick;
 	private static Toast toastLongClick;
+=======
+>>>>>>> 21b0ae4c7d7c641000ddc9fa976179e8d4cc7222
 	private RecyclerView recyclerView;
 	private RecyclerAdapter recyclerAdapter;
 	private ActionBarDrawerToggle mDrawerToggle;
@@ -53,6 +59,7 @@ public class NavigationDrawerFragment extends Fragment {
 
 					@Override
 					public void onLongClick(View view, int position) {
+<<<<<<< HEAD
 						if (toastClick != null) {
 							toastClick.cancel();
 						}
@@ -63,10 +70,15 @@ public class NavigationDrawerFragment extends Fragment {
 								"Long click on position " + position,
 								Toast.LENGTH_SHORT);
 						toastClick.show();
+=======
+						// TODO Auto-generated method stub
+
+>>>>>>> 21b0ae4c7d7c641000ddc9fa976179e8d4cc7222
 					}
 
 					@Override
 					public void onClick(View view, int position) {
+<<<<<<< HEAD
 						if (toastClick != null) {
 							toastClick.cancel();
 						}
@@ -77,6 +89,10 @@ public class NavigationDrawerFragment extends Fragment {
 								"Click on position " + position,
 								Toast.LENGTH_SHORT);
 						toastLongClick.show();
+=======
+						// TODO Auto-generated method stub
+
+>>>>>>> 21b0ae4c7d7c641000ddc9fa976179e8d4cc7222
 					}
 				}));
 		return layout;
@@ -174,9 +190,14 @@ public class NavigationDrawerFragment extends Fragment {
 		private ClickListener clickListener;
 
 		public RecyclerTouchListener(Context context,
+<<<<<<< HEAD
 				final RecyclerView recyclerView,
 				final ClickListener clickListener) {
 			this.clickListener = clickListener;
+=======
+				final RecyclerView recyclerView, ClickListener $clickListener) {
+			this.clickListener = $clickListener;
+>>>>>>> 21b0ae4c7d7c641000ddc9fa976179e8d4cc7222
 			gestureDetector = new GestureDetector(context,
 					new GestureDetector.SimpleOnGestureListener() {
 						@Override
@@ -186,12 +207,20 @@ public class NavigationDrawerFragment extends Fragment {
 
 						@Override
 						public void onLongPress(MotionEvent e) {
+<<<<<<< HEAD
 							View child = recyclerView.findChildViewUnder(
 									e.getX(), e.getY());
 							if (child != null && clickListener != null) {
 								clickListener.onLongClick(child, recyclerView
 										.getChildAdapterPosition(child));
 							}
+=======
+							View child = recyclerView.findChildViewUnder(e.getX(), e.getY());
+							if(child!=null && clickListener!=null){
+								clickListener.onLongClick(child, recyclerView.getChildAdapterPosition(child));
+							}
+							super.onLongPress(e);
+>>>>>>> 21b0ae4c7d7c641000ddc9fa976179e8d4cc7222
 						}
 					});
 		}
@@ -199,8 +228,12 @@ public class NavigationDrawerFragment extends Fragment {
 		@Override
 		public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
 			View child = rv.findChildViewUnder(e.getX(), e.getY());
+<<<<<<< HEAD
 			if (child != null && clickListener != null
 					&& gestureDetector.onTouchEvent(e)) {
+=======
+			if(child!=null && clickListener!=null){
+>>>>>>> 21b0ae4c7d7c641000ddc9fa976179e8d4cc7222
 				clickListener.onClick(child, rv.getChildAdapterPosition(child));
 			}
 			return false;
