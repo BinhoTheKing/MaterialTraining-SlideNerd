@@ -17,6 +17,7 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class NavigationDrawerFragment extends Fragment {
@@ -60,7 +61,7 @@ public class NavigationDrawerFragment extends Fragment {
 							toastLongClick.cancel();
 						}
 						toastClick = Toast.makeText(getActivity(),
-								"Long click on position " + position,
+								"Long click on " + ((TextView)view.findViewById(R.id.itemText)).getText(),
 								Toast.LENGTH_SHORT);
 						toastClick.show();
 					}
@@ -74,7 +75,7 @@ public class NavigationDrawerFragment extends Fragment {
 							toastLongClick.cancel();
 						}
 						toastLongClick = Toast.makeText(getActivity(),
-								"Click on position " + position,
+								"Click on " + ((TextView)view.findViewById(R.id.itemText)).getText(),
 								Toast.LENGTH_SHORT);
 						toastLongClick.show();
 					}
