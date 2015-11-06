@@ -12,7 +12,6 @@
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:padding="8dp"
         android:src="@drawable/ic_action_florist" />
 
     <TextView
@@ -23,7 +22,6 @@
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="72dp"
         android:layout_marginStart="72dp"
-        android:padding="8dp"
         android:text="Dummy Text" />
 
 </RelativeLayout>
