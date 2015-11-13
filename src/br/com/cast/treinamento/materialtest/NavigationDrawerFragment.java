@@ -85,7 +85,7 @@ public class NavigationDrawerFragment extends Fragment {
 
 	public static List<ItemData> getData() {
 		List<ItemData> items = new ArrayList<ItemData>();
-		int[] images = { R.drawable.ic_action_image_tag_faces,
+		int[] images = { R.drawable.ic_action_emoticon,
 				R.drawable.ic_action_maps_directions_ferry,
 				R.drawable.ic_action_florist, R.drawable.ic_action_hotel };
 		String[] titles = { "Smiling Face", "Iron Ferry", "Little Flowers",

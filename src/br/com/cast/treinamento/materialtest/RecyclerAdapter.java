@@ -14,12 +14,12 @@ import br.com.cast.treinamento.materialtest.RecyclerAdapter.MyViewHolder;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
-	private Activity context;
+//	private Activity context;
 	private LayoutInflater inflater;
 	private List<ItemData> items;
 
 	public RecyclerAdapter(Activity context, List<ItemData> items) {
-		this.context = context;
+//		this.context = context;
 		this.inflater = LayoutInflater.from(context);
 		this.items = items;
 	}

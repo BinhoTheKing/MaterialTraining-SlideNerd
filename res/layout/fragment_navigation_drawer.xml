@@ -1,42 +1,42 @@
-<org.lucasr.dspec.DesignSpecFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--
+ <org.lucasr.dspec.DesignSpecFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:designSpec="@raw/nav_drawer_spec" >
+-->
 
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    app:theme="@style/AppTheme"
+    tools:context="br.com.cast.treinamento.materialtest.NavigationDrawerFragment" >
+
+    <ImageView
+        android:id="@+id/image_navigation_drawer"
+        android:layout_width="0dp"
+        android:layout_height="181dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/primaryColorLight"
+        android:contentDescription="@android:string/untitled"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cartoon_background" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_navigation_drawer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/secondaryTextColorLight"
-        android:clickable="true"
-        app:theme="@style/AppTheme"
-        tools:context="br.com.cast.treinamento.materialtest.NavigationDrawerFragment" >
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/image_navigation_drawer" >
+    </android.support.v7.widget.RecyclerView>
 
-        <ImageView
-            android:id="@+id/image_navigation_drawer"
-            android:layout_width="0dp"
-            android:layout_height="181dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:background="@color/primaryColorLight"
-            android:contentDescription="Imagem"
-            android:scaleType="centerCrop"
-            android:src="@drawable/cartoon_background" />
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler_navigation_drawer"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_alignParentBottom="true"
-            android:layout_below="@id/image_navigation_drawer" >
-        </android.support.v7.widget.RecyclerView>
-    </RelativeLayout>
-
-</org.lucasr.dspec.DesignSpecFrameLayout>
+</RelativeLayout>
+<!-- </org.lucasr.dspec.DesignSpecFrameLayout> -->
